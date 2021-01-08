@@ -81,6 +81,7 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise-bootstrap-views (1.1.0)
     erubi (1.10.0)
     ffi (1.14.2-x64-mingw32)
     globalid (0.4.2)
@@ -207,6 +208,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   devise
+  devise-bootstrap-views
   jbuilder (~> 2.7)
   pg (>= 0.18, < 2.0)
   puma (~> 4.1)
