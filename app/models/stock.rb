@@ -7,6 +7,5 @@ class Stock < ApplicationRecord
 	  	endpoint: 'https://sandbox.iexapis.com/v1'
 		)
 		client.price(ticker_symbol)
-	en
-d 
+	end 
 end
