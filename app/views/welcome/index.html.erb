@@ -1,4 +1,9 @@
 <h1>Hello World!!!</h1>
 <p>Time now is: <b><%= Time.now.to_formatted_s(:db) %></p></b>
 
+<h4>Go To: </h4>
+<ol>
+	<li><%= link_to "Portfolio", portfolio_path %></li>
+</ol>
+
 <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-danger"  %>
