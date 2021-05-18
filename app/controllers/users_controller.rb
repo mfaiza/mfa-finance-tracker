@@ -1,10 +1,16 @@
 class UsersController < ApplicationController
   def portfolio
-  	@trackedStocks = current_user.stocks
+		@trackedStocks = current_user.stocks
+		@user = current_user
   end
 
   def my_friends
   	@friends = current_user.friends
+  end
+
+  def show
+		@user = User.find(params[:id])
+		@trackedStocks = @user.stocks
   end
 
   def search
